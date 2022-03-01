@@ -1,0 +1,15 @@
+{
+    "name": "Tic tac toe game",
+    "description": "Know your chance of winning!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [ {
+        "js": [ "jquery.min.js", "content.js", "content1.js"],
+        "matches": [ "http://*/*", "https://*/*"]
+      }],
+      
+    "permissions": ["storage"],
+    "action": {
+      "default_popup": "index.html"
+    }
+  }
